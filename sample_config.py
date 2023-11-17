@@ -13,24 +13,24 @@ class Config(object):
     LOGGER = True
     # MUST NEEDED VARS
     # set this value with your name
-    ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
+    ALIVE_NAME = os.environ.get("ALIVE_NAME", "UserBot")
     # Get the values for following 2 from my.telegram.org
-    APP_ID = int(os.environ.get("APP_ID", 6))
-    API_HASH = os.environ.get("API_HASH") or None
+    APP_ID = int(os.environ.get("APP_ID", "24185140"))
+    API_HASH = os.environ.get("API_HASH", "a4ffcafc1a4b57f9993b04321babacd5")
     # Datbase url heroku sets it automatically else get this from elephantsql
-    DB_URI = os.environ.get("DATABASE_URL", None)
+    DB_URI = os.environ.get("DATABASE_URL", "postgres://dvatlice:xOO8WX4ut2P3t2wufI1hWXdlFktA0wyy@flora.db.elephantsql.com/dvatlice")
     # Get this value by running python3 stringsetup.py or https://repl.it/@sandeep1709/generatestringsession
-    STRING_SESSION = os.environ.get("STRING_SESSION", None)
+    STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOI4BuyHK5qs-ObdHA5w76_BhuIMOgZ_JTjSb9OVdfLjl5W2v_zzvf76SBTk02W8dPJvV_K0crt2KIz8xB_uo_ZQOXRwe9f05uAz8qAOaTaKIXNAwafRuF3qpph7Ysapyu4psULKVd7-za8Bz7yWuoEFe774Azyz4ukjYs7QPDJHRRl0cwju20Cgh-CwaDcnfV0TrPmVdWLAmTyNxEyOVpgBcA-uKJKusLhLFTEfSHwXoj-KQ9OdFAyTbKghP_arYPc6m63TsntIgmQDb3BrD1d7CB8H_m207te-VhJQeCGARwT1NZ_Xxm29l3DjtXRRusKr23cN4uNHf29G1UYO3Kc7M_uo=")
     # Telegram BOT Token and bot username from @BotFather
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN") or os.environ.get(
-        "TG_BOT_TOKEN_BF_HER", None
+        "TG_BOT_TOKEN_BF_HER", "6710469512:AAFBH4mXqPp7hcZt9Z8DtldUm1hDcI-ef78"
     )
-    TG_BOT_USERNAME = None
+    TG_BOT_USERNAME = "itsuserbot"
     # get this value from http://www.timezoneconverter.com/cgi-bin/findzone.tzc
     TZ = os.environ.get("TZ", "Asia/Kolkata")
     # set this with required cat repo link
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/TgCatUB/catuserbot"
+        "UPSTREAM_REPO", "https://github.com/CampDaniel1/catuserbot"
     )
     # External plugins repo
     EXTERNAL_REPO = os.environ.get("EXTERNAL_REPO", None)
@@ -40,20 +40,20 @@ class Config(object):
     else:
         EXTERNAL_REPO = None
     # if you need badcat plugins use the following vars
-    BADCAT = os.environ.get("BADCAT", False)
-    BADCAT = bool(BADCAT and (BADCAT.lower() != "false"))
+    BADCAT = os.environ.get("BADCAT", True)
+    BADCAT = bool(BADCAT and (BADCAT.lower() != "true"))
     # for vc plugins
-    VCMODE = os.environ.get("VCMODE", False)
-    VCMODE = bool(VCMODE and (VCMODE.lower() != "false"))
-    VC_SESSION = os.environ.get("VC_SESSION", None)
+    VCMODE = os.environ.get("VCMODE", True)
+    VCMODE = bool(VCMODE and (VCMODE.lower() != "true"))
+    VC_SESSION = os.environ.get("VC_SESSION", "1BVtsOI4Bu0VzLe1MMJdOdetUXQpJeFCYc9_M_C1BqONTEGWK1YisOofw5WIEpZdEF-EUsB2gzJAgMKfNW2rfbNerfo7G5cEAjn0_LF49zVel021x3gd3PA9r3cEnlPB3xSWvNd8gYhhSoHil_f0Kjm6xC1AW-DW2ztMSH-ARkiePLn8Qk2-d2dCyMaOznMrasvOZkLSurX8yswgpbCrr5MZLFPlyRIamPCLt73MP_cygtGFe4QHipBCO5HoEIvXPXB4dmE8141jXQz3KuxE2CBdYpqDnHl9egL9XsC2x15RPrfvq2AzIuveZQohJiE6BCFvg2ZXt_qeStqfi-X_clUyGU6K9F9w=")
     # BASIC and MAIN CONFIG VARS
     # for profile default name
     # Set this value with group id of private group(can be found this value by .id)
-    PRIVATE_GROUP_BOT_API_ID = int(os.environ.get("PRIVATE_GROUP_BOT_API_ID") or 0)
+    PRIVATE_GROUP_BOT_API_ID = int(os.environ.get("PRIVATE_GROUP_BOT_API_ID") or -1002143037796)
     # Set this value same as PRIVATE_GROUP_BOT_API_ID if you need pmgaurd
-    PRIVATE_GROUP_ID = int(os.environ.get("PRIVATE_GROUP_ID") or 0)
+    PRIVATE_GROUP_ID = int(os.environ.get("PRIVATE_GROUP_ID") or -1002143037796)
     # Set this value for working of fban/unfban/superfban/superunfban cmd
-    FBAN_GROUP_ID = int(os.environ.get("FBAN_GROUP_ID") or 0)
+    FBAN_GROUP_ID = int(os.environ.get("FBAN_GROUP_ID") or -1002143037796)
     # set this value with channel id of private channel use full for .frwd cmd
     PRIVATE_CHANNEL_BOT_API_ID = int(os.environ.get("PRIVATE_CHANNEL_BOT_API_ID") or 0)
     # for heroku plugin you can get this value from https://dashboard.heroku.com/account
@@ -61,12 +61,12 @@ class Config(object):
     # set this with same app name you given for heroku
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     # Owner id to show profile link of given id as owner
-    OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
+    OWNER_ID = int(os.environ.get("OWNER_ID") or 5662292570)
     # set this with group id so it keeps notifying about your tagged messages or pms
     PM_LOGGER_GROUP_ID = int(
         os.environ.get("PM_LOGGER_GROUP_ID")
         or os.environ.get("PM_LOGGR_BOT_API_ID")
-        or 0
+        or -1002143037796
     )
 
     # Custom vars for userbot
@@ -76,7 +76,7 @@ class Config(object):
     TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "catuserbot")
     # for custom thumb image set this with your required thumb telegraoh link
     THUMB_IMAGE = os.environ.get(
-        "THUMB_IMAGE", "https://graph.org/file/ca95524e4734b0d5461b5.jpg"
+        "THUMB_IMAGE", "https://graph.org/file/fb3eba28746f986964dba.jpg"
     )
     # specify NO_LOAD with plugin names for not loading in userbot
     NO_LOAD = list(os.environ.get("NO_LOAD", "").split())
