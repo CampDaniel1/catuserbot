@@ -6,11 +6,11 @@ class Development(Config):
     APP_ID = 11903991
     API_HASH = "7edc6552882ec6ce04c3386be7f97a1d"
     # the name to display in your alive message
-    ALIVE_NAME = "UserBot"
+    ALIVE_NAME = "𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙘𝙚"
     # create any PostgreSQL database (i recommend to use elephantsql) and paste that link here
     DB_URI = "postgres://dvatlice:xOO8WX4ut2P3t2wufI1hWXdlFktA0wyy@flora.db.elephantsql.com/dvatlice"
     # After cloning the repo and installing requirements do python3 stringsetup.py an fill that value with this
-    STRING_SESSION = "1BVtsOJoBu35FqixBxRhg6Ii-geO2eqDddzgERWAp_U6GAXojZoUXIMmQZp-i_TfR_ZoaZcpnOs3JJ0_Ir1YJtgoAwMsgMwNlCu4UXnTGzkQTpO2KtnxaWjtDUBPLe36ikCrSBEox6JoE2j3kP6BqV7fpn49kqe3UsXu3k79Lwxqzm-HN3vnh1I0gKm2oMVPl_mrG_cFHkAH6lxqZMtEPmOC-HwqecttZAuPP8jTnR0R3n2IE_NZDzkN0Wn0tOQeissfY8UuiXuEjy31rWvSg3qoSrzQJoLpZip4B6IJqUoX6L94pUmBnPgQ7f5CcO0cSrTF_EOET-0vcqe3IrxTlkW9TG_cu8HE="
+    STRING_SESSION = "1BVtsOI0Bu8UYa1InaUsdQm7MWQ8JHBnX_CVt_Bea-plpUSyUJ9s_-QoL66frycX18XvuMvk0ooKQoat-toEk4nhUFdGm16cVtvTXAQZrCv1asqwqhqetl5ybwizm-MGcB8lPZXM4SvA7-5IAROhQnQBRTDhxNlZ5VHrdV0M5_-OAfqbjOaJvZ-RQKGbTDF4R3I3UR6ZpXYB4ODOnQYxG7nAiR8x1yW_-eY1gTD9yZhBJshAjdhC3snjKe_FDdYgkHXNFO6Sz8wu2DG_JBRI4fdYVVheSLnD8Csz_kjoqkmz3F6vaLLZBDxuTZSzrTnQVF8ulALIAMc29Vb6K4vCjN1purmLEqTQ="
     # create a new bot in @botfather and fill the following vales with bottoken
     TG_BOT_TOKEN = "6710469512:AAFBH4mXqPp7hcZt9Z8DtldUm1hDcI-ef78"
     # create a private group and a rose bot to it and type /id and paste that id here (replace that -100 with that group id)
